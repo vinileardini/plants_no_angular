@@ -34,10 +34,16 @@ function openCard(cardId) {
     backButton.className = 'returnButton'
     backButton.appendChild(imgVoltar)
     backButton.onclick = returnToMainPage;
-  
+    
+
+    //Altera classe das principais info no página principal da planta
+
+    const bigInfo = document.getElementById('info')
+    bigInfo.className = 'big-info'
 
     const button_info = document.getElementById('more-info')
     button_info.parentNode.removeChild(button_info);
+
 
     const divTextPlant = document.createElement('div');
     selectedCard.appendChild(divTextPlant)
