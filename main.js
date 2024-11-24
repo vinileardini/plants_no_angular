@@ -44,6 +44,7 @@ function openCard(cardId) {
     const button_info = document.getElementById('more-info')
     button_info.parentNode.removeChild(button_info);
 
+    // Cria a div para o texto mais detalhado sobre a planta
 
     const divTextPlant = document.createElement('div');
     selectedCard.appendChild(divTextPlant)
