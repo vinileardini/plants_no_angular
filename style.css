@@ -667,6 +667,9 @@ body, html {
         margin-top: .5vh;
         margin-bottom: 1vh;
         border: none;
+        display: flex;
+        align-items: flex-start;
+        margin-left: 2%;
 
     }
     .returnButton > img{
