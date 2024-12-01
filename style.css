@@ -205,23 +205,27 @@ body, html {
     }
     .returnButton{
         background-color: transparent;
-        max-height: 5%;
-        min-height: 5%;
-        height: 5%;
-        max-width: 5%;
-        min-width: 5%;
-        width: 5%;
-        margin-top: 1vh;
+        max-height: 3%;
+        min-height: 3%;
+        height: 3%;
+        max-width: 90%;
+        min-width: 90%;
+        width: 90%;
+        margin-top: .5vh;
         margin-bottom: 1vh;
         border: none;
+        display: flex;
+        align-items: flex-start;
+        margin-left: 2%;
+
     }
     .returnButton > img{
         max-height: 100%;
         min-height: 100%;
         height: 100%;
-        max-width: 100%;
-        min-width: 100%;
-        width: 100%;
+        max-width: 5%;
+        min-width: 5%;
+        width: 5%;
         border: none;
     }
 
@@ -434,26 +438,29 @@ body, html {
     }
     .returnButton{
         background-color: transparent;
-        max-height: 5%;
-        min-height: 5%;
-        height: 5%;
-        max-width: 5%;
-        min-height: 5%;
-        width: 5%;
-        margin-top: 1vh;
+        max-height: 3%;
+        min-height: 3%;
+        height: 3%;
+        max-width: 90%;
+        min-width: 90%;
+        width: 90%;
+        margin-top: .5vh;
         margin-bottom: 1vh;
         border: none;
+        display: flex;
+        align-items: flex-start;
+        margin-left: 2%;
+
     }
     .returnButton > img{
         max-height: 100%;
         min-height: 100%;
         height: 100%;
-        max-width: 100%;
-        min-width: 100%;
-        width: 100%;
+        max-width: 5%;
+        min-width: 5%;
+        width: 5%;
         border: none;
     }
-
     .big-info{
         width: 80%;
         display: flex;
@@ -471,7 +478,9 @@ body, html {
 /* Dispositivos móveis (até 600px) */
 @media (max-width: 600px) {
     .header{
-        height: 30vh;
+        height: 25vh;
+        min-height: 25vh;
+        max-height: 25vh;
         width: 95vw;
         display: flex;
         flex-direction: column;
@@ -482,7 +491,7 @@ body, html {
         
     }
     .header > .logo{
-        height: 100%;
+        height: 70%;
         width: 80%;
         border-radius: 50px;
         margin: 0;
@@ -494,7 +503,10 @@ body, html {
         justify-items: center;
     }
     .card-principal{
-        width: 80vw;
+        width: 90%;
+        min-width: 90%;
+        max-width: 90%;
+        height: 30%;
         min-height: 30%;
         max-height: 30%;
         display: flex;
@@ -512,9 +524,9 @@ body, html {
     }
     .img_div{
         min-width: 50%;
-        min-height: 50%;
+        min-height: 30%;
         max-width: 50%;
-        max-height: 50%;
+        max-height: 30%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -522,8 +534,10 @@ body, html {
         
     }
     .card-principal > .img_div > img{
-        max-height: 80%;
+        max-height: 40%;
+        min-width: 80%;
         max-width: 49%;
+        min-height: 40%;
         border-radius: 5px;
         display: flex;
         margin-top: 10%;
@@ -535,18 +549,24 @@ body, html {
     }
     .text-card{
         width: 49%;
-        height: 90%;
+        height: 50%;
+        min-height: 50%;
+        max-height: 50%;
         display: flex;
         justify-content: center;
         flex-direction: column;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         margin-left: 1%;
+
     }
     .text-card > h3{
         display: flex;
         justify-content: center;
         text-transform: uppercase;
+        max-width: 100%;
+        min-width: 100%;font-size: clamp(1rem, 2vw, 3rem); /* Ajusta dinamicamente entre 1rem e 3rem */
     }
+
     .div_principal {
         display: flex;
         flex-direction: column; 
@@ -557,6 +577,11 @@ body, html {
     }
     .info{
         width: 80%;
+        min-width: 80%;
+        max-width: 80%;
+        height: 80%;
+        min-height: 80%;
+        max-height: 80%;
         display: flex;
         flex-direction: column;
         margin-left: 5%;
@@ -658,12 +683,12 @@ body, html {
     }
     .returnButton{
         background-color: transparent;
-        max-height: 5%;
-        min-height: 5%;
-        height: 5%;
-        max-width: 100%;
-        min-width: 100%;
-        width: 100%;
+        max-height: 3%;
+        min-height: 3%;
+        height: 3%;
+        max-width: 90%;
+        min-width: 90%;
+        width: 90%;
         margin-top: .5vh;
         margin-bottom: 1vh;
         border: none;
@@ -681,7 +706,6 @@ body, html {
         width: 5%;
         border: none;
     }
-
     .big-info{
         width: 80%;
         display: flex;
